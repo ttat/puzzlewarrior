@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LevelMapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Keys>
+    <Key>1</Key>
+    <Key>2</Key>
+  </Keys>
+  <Values>
+    <Value>Test1</Value>
+    <Value>Test2</Value>
+  </Values>
+</LevelMapping>

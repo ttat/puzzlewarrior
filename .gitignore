@@ -2,3 +2,7 @@
 Tools/GnomeSolverTool/packages/
 Tools/GnomeSolverTool/GnomeSolverToolApp/bin/
 Tools/GnomeSolverTool/GnomeSolverToolApp/obj/
+*.user
+Unit Tests/GnomeUnitTests/packages/
+Unit Tests/GnomeUnitTests/Idky.Tests/obj/
+Unit Tests/GnomeUnitTests/Idky.Tests/bin/

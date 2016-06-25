@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameBoard xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <GameBlocks>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="0" IndexRow="0" ForceDirection="Down" />
+      <GameBlockBase xsi:type="GameBlockExtraMove" IndexColumn="1" IndexRow="0" />
+      <GameBlockBase xsi:type="GameBlockMultipleMoves" IndexColumn="2" IndexRow="0" NumberOfMovesApplied="2" NumberOfMovesNeeded="2" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="0" IndexRow="1" IsAvailable="false" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="1" IndexRow="1" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="2" IndexRow="1" AvailableMoves="0" />
+    </GameBlock>
+  </GameBlocks>
+</GameBoard>
