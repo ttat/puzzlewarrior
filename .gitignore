@@ -1,0 +1,4 @@
+*.suo
+Tools/GnomeSolverTool/packages/
+Tools/GnomeSolverTool/GnomeSolverToolApp/bin/
+Tools/GnomeSolverTool/GnomeSolverToolApp/obj/

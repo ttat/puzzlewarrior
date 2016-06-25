@@ -1,0 +1,1187 @@
+﻿<Window x:Class="GnomeSolverToolApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:GnomeSolverToolApp="clr-namespace:GnomeSolverToolApp"
+        xmlns:Idky="clr-namespace:Idky;assembly=Assembly-CSharp"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="MainWindow"
+        Width="1000"
+        Height="800">
+    <Window.Resources>
+        <GnomeSolverToolApp:GameBoardToDifficultyConverter x:Key="GameBoardToDifficultyConverter" />
+        <GnomeSolverToolApp:GameBoardToContainingTypesConverter x:Key="GameBoardToContainingTypesConverter" />
+        <GnomeSolverToolApp:GameBoardToDestinationBoardStringConverter x:Key="GameBoardToDestinationBoardStringConverter" />
+        <GnomeSolverToolApp:GameBoardToRowsConverter x:Key="GameBoardToRowsConverter" />
+        <GnomeSolverToolApp:GameBoardToColumnsConverter x:Key="GameBoardToColumnsConverter" />
+        <GnomeSolverToolApp:GameBoardToRowsTimesColumnsConverter x:Key="GameBoardToRowsTimesColumnsConverter" />
+        <GnomeSolverToolApp:GameBoardIdToDifficultyConverter x:Key="GameBoardIdToDifficultyConverter" />
+        <GnomeSolverToolApp:GameBoardIdToContainingTypesConverter x:Key="GameBoardIdToContainingTypesConverter" />
+        <GnomeSolverToolApp:GameBoardIdToDestinationBoardStringConverter x:Key="GameBoardIdToDestinationBoardStringConverter" />
+        <GnomeSolverToolApp:GameBoardIdToRowsConverter x:Key="GameBoardIdToRowsConverter" />
+        <GnomeSolverToolApp:GameBoardIdToColumnsConverter x:Key="GameBoardIdToColumnsConverter" />
+        <GnomeSolverToolApp:GameBoardIdToRowsTimesColumnsConverter x:Key="GameBoardIdToRowsTimesColumnsConverter" />
+        <BitmapImage x:Key="NormalBlockImage" UriSource="Images/Box.png" />
+        <BitmapImage x:Key="PlayerBlockImage" UriSource="Images/Dino.png" />
+        <BitmapImage x:Key="ChangeDirectionUpBlockImage" UriSource="Images/ChangeDirectionUp.png" />
+        <BitmapImage x:Key="ChangeDirectionDownBlockImage" UriSource="Images/ChangeDirectionDown.png" />
+        <BitmapImage x:Key="ChangeDirectionLeftBlockImage" UriSource="Images/ChangeDirectionLeft.png" />
+        <BitmapImage x:Key="ChangeDirectionRightBlockImage" UriSource="Images/ChangeDirectionRight.png" />
+        <BitmapImage x:Key="ExtraMoveBlockImage" UriSource="Images/ExtraMove.png" />
+        <BitmapImage x:Key="MultipleMovesBlockImage" UriSource="Images/MultipleMoves.png" />
+        <DataTemplate x:Key="SolvedGameBoardDataTemplateLevel2" DataType="{x:Type GnomeSolverToolApp:GameBlockSelector}">
+            <Button Width="70"
+                    Height="70"
+                    Margin="4"
+                    Click="GameBlockButtonClick"
+                    MouseRightButtonUp="GameBlockRightButtonClick">
+                <Button.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Null}">
+                                            <Setter Property="Source" Value="{x:Null}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Normal}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=NormalBlockImage}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Player}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=PlayerBlockImage}" />
+                                        </DataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Up}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionUpBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Down}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionDownBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Left}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionLeftBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Right}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionRightBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ExtraMove}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=ExtraMoveBlockImage}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.MultipleMoves}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=MultipleMovesBlockImage}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <TextBlock Grid.Row="1"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Background="White"
+                                   Text="{Binding Path=Text}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Normal}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ExtraMove}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Null}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Player}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                        <TextBox Grid.Row="2"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Center"
+                                 Background="White"
+                                 Text="{Binding Path=PreferredMax}">
+                            <TextBox.Style>
+                                <Style TargetType="TextBox">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ExtraMove}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.MultipleMoves}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Normal}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Null}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </Grid>
+                </Button.Content>
+            </Button>
+        </DataTemplate>
+        <DataTemplate x:Key="SolvedGameBoardDataTemplateLevel1">
+            <ItemsControl ItemsSource="{Binding}" ItemTemplate="{DynamicResource SolvedGameBoardDataTemplateLevel2}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </DataTemplate>
+        <DataTemplate x:Key="GameBoardPuzzleDataTemplateLevel2" DataType="{x:Type GnomeSolverToolApp:GameBlockWrapper}">
+            <Button Width="50"
+                    Height="50"
+                    Margin="4">
+                <Button.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Null}">
+                                            <Setter Property="Source" Value="{x:Null}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Normal}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=NormalBlockImage}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Player}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=PlayerBlockImage}" />
+                                        </DataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Up}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionUpBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Down}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionDownBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Left}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionLeftBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}" />
+                                                <Condition Binding="{Binding Path=Direction}" Value="{x:Static Idky:MovementDirection.Right}" />
+                                            </MultiDataTrigger.Conditions>
+                                            <MultiDataTrigger.Setters>
+                                                <Setter Property="Source" Value="{StaticResource ResourceKey=ChangeDirectionRightBlockImage}" />
+                                            </MultiDataTrigger.Setters>
+                                        </MultiDataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ExtraMove}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=ExtraMoveBlockImage}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.MultipleMoves}">
+                                            <Setter Property="Source" Value="{StaticResource ResourceKey=MultipleMovesBlockImage}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <TextBlock Grid.Row="1"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Background="White"
+                                   Text="{Binding Path=.}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Normal}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ChangeDirection}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.ExtraMove}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=BlockType}" Value="{x:Static Idky:GameBoard+GameBlockType.Null}">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+                </Button.Content>
+            </Button>
+        </DataTemplate>
+        <DataTemplate x:Key="GameBoardPuzzleDataTemplateLevel1">
+            <ItemsControl ItemsSource="{Binding}" ItemTemplate="{DynamicResource GameBoardPuzzleDataTemplateLevel2}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </DataTemplate>
+        <xcdg:DataGridCollectionViewSource x:Key="LoadGameBoardsDataGridDataGridSource"
+                                           AutoCreateItemProperties="False"
+                                           Source="{Binding Path=GameBoards}">
+            <xcdg:DataGridCollectionViewSource.ItemProperties>
+                <xcdg:DataGridItemProperty Name="PuzzleId"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Difficulty"
+                                           Converter="{StaticResource GameBoardToDifficultyConverter}"
+                                           DataType="{x:Type System:Double}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="ContainingTypes"
+                                           Converter="{StaticResource GameBoardToContainingTypesConverter}"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Successes"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="Successes" />
+                <xcdg:DataGridItemProperty Name="Failures"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="Failures" />
+                <xcdg:DataGridItemProperty Name="DestinationBoardString"
+                                           Converter="{StaticResource GameBoardToDestinationBoardStringConverter}"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Rows"
+                                           Converter="{StaticResource GameBoardToRowsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Columns"
+                                           Converter="{StaticResource GameBoardToColumnsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="RowsTimesColumns"
+                                           Converter="{StaticResource GameBoardToRowsTimesColumnsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+            </xcdg:DataGridCollectionViewSource.ItemProperties>
+        </xcdg:DataGridCollectionViewSource>
+        <xcdg:DataGridCollectionViewSource x:Key="ArchivedGameBoardsDataGridDataGridSource"
+                                           AutoCreateItemProperties="False"
+                                           Source="{Binding Path=ArchivedGameBoards}">
+            <xcdg:DataGridCollectionViewSource.ItemProperties>
+                <xcdg:DataGridItemProperty Name="PuzzleId"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Difficulty"
+                                           Converter="{StaticResource GameBoardToDifficultyConverter}"
+                                           DataType="{x:Type System:Double}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="ContainingTypes"
+                                           Converter="{StaticResource GameBoardToContainingTypesConverter}"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Successes"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="Successes" />
+                <xcdg:DataGridItemProperty Name="Failures"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="Failures" />
+                <xcdg:DataGridItemProperty Name="DestinationBoardString"
+                                           Converter="{StaticResource GameBoardToDestinationBoardStringConverter}"
+                                           DataType="{x:Type System:String}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Rows"
+                                           Converter="{StaticResource GameBoardToRowsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="Columns"
+                                           Converter="{StaticResource GameBoardToColumnsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+                <xcdg:DataGridItemProperty Name="RowsTimesColumns"
+                                           Converter="{StaticResource GameBoardToRowsTimesColumnsConverter}"
+                                           DataType="{x:Type System:Int32}"
+                                           ValuePath="." />
+            </xcdg:DataGridCollectionViewSource.ItemProperties>
+        </xcdg:DataGridCollectionViewSource>
+    </Window.Resources>
+    <Grid>
+        <TabControl>
+            <TabItem Header="Solved Game Board">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <xctk:BusyIndicator Grid.Column="0"
+                                        Grid.ColumnSpan="4"
+                                        Panel.ZIndex="100"
+                                        BusyContent="Analyzing puzzles, please wait..."
+                                        IsBusy="{Binding Path=IsBusy}" />
+
+                    <ItemsControl Grid.Column="0"
+                                  Background="White"
+                                  ItemsSource="{Binding Path=SolvedGameBoard}"
+                                  ItemTemplate="{DynamicResource SolvedGameBoardDataTemplateLevel1}" />
+                    <StackPanel Grid.Column="1">
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Number of Rows: " />
+                            <TextBox Text="{Binding Path=NumberOfRows}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Number of Columns: " />
+                            <TextBox Text="{Binding Path=NumberOfColumns}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Max Number of Moves: " />
+                            <TextBox Text="{Binding Path=MaxNumberOfMoves}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Max Number of Solutions: " />
+                            <TextBox Text="{Binding Path=MaxNumberOfSolutions}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Variability: " />
+                            <TextBox Text="{Binding Path=Variability}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Combinations: " />
+                            <TextBox Text="{Binding Path=MaxNumberOfIntermediateCombinations}" ToolTip="The max number of combinations when removing intermediate blocks.\nIntermediate blocks are blocks between the the source and destinations.\nThese sometimes need to be removed because it's using more than the max allowed." />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Timeout (ms): " />
+                            <TextBox Text="{Binding Path=MilliSecondsTimeout}" />
+                        </DockPanel>
+                        <CheckBox Content="Test Can Reverse Solve"
+                                  IsChecked="{Binding Path=TestCanReverseSolve}"
+                                  ToolTip="When reverse solving, try to test it first to eliminate impossible solutions.  However, it doesn't always work right." />
+                        <CheckBox Content="Analyze Immediately"
+                                  IsChecked="{Binding Path=AnalyzeAfterGeneratingPuzzle}"
+                                  ToolTip="Analyze puzzles immediately after it's done generating." />
+                        <CheckBox Content="Hide Messages"
+                                  IsChecked="{Binding Path=HideMessages}"
+                                  ToolTip="Don't show pop up message boxes." />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandInitializeGameBoard}"
+                                Content="Initialize Game Board" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandClearGameBoard}"
+                                Content="Clear Game Board" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandGenerateSolutions}"
+                                Content="Generate Solutions" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandAnalyzeSolutions}"
+                                Content="Analyze Solutions" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandRequestAbortSolver}"
+                                Content="Abort" />
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Solutions Found: " />
+                            <TextBox Text="{Binding Path=CountSolutionsFound}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Solutions Failed: " />
+                            <TextBox Text="{Binding Path=CountSolutionsFailed}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Solutions Analyzed: " />
+                            <TextBox Text="{Binding Path=CountSolutionsAnalyzed}" />
+                        </DockPanel>
+                    </StackPanel>
+                    <Rectangle Grid.Column="2"
+                               Width="2"
+                               VerticalAlignment="Stretch"
+                               Stroke="Black" />
+                    <StackPanel Grid.Column="3">
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=RowColumnsHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=RowColumnsLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="7"
+                                              Minimum="4"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Row/Columns Range: {0} to {1}">
+                                        <Binding Path="RowColumnsLowerValue" />
+                                        <Binding Path="RowColumnsHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=MaxNumberOfBlocksHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=MaxNumberOfBlocksLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="49"
+                                              Minimum="4"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Max Number of Blocks: {0} to {1}">
+                                        <Binding Path="MaxNumberOfBlocksLowerValue" />
+                                        <Binding Path="MaxNumberOfBlocksHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=PlayerBlocksHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=PlayerBlocksLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="{Binding Path=MaxNumberOfBlocksHigherValue}"
+                                              Minimum="1"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Player Blocks Range: {0} to {1}">
+                                        <Binding Path="PlayerBlocksLowerValue" />
+                                        <Binding Path="PlayerBlocksHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=NormalBlocksHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=NormalBlocksLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="{Binding Path=MaxNumberOfBlocksHigherValue}"
+                                              Minimum="1"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Normal Blocks Range: {0} to {1}">
+                                        <Binding Path="NormalBlocksLowerValue" />
+                                        <Binding Path="NormalBlocksHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=ChangeDirectionHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=ChangeDirectionLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="{Binding Path=MaxNumberOfBlocksHigherValue}"
+                                              Minimum="0"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Change Directions Range: {0} to {1}">
+                                        <Binding Path="ChangeDirectionLowerValue" />
+                                        <Binding Path="ChangeDirectionHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=ExtraBlockHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=ExtraBlockLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="{Binding Path=MaxNumberOfBlocksHigherValue}"
+                                              Minimum="0"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Extra Block Range: {0} to {1}">
+                                        <Binding Path="ExtraBlockLowerValue" />
+                                        <Binding Path="ExtraBlockHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <xctk:RangeSlider DockPanel.Dock="Bottom"
+                                              HigherValue="{Binding Path=MultiBlockHigherValue,
+                                                                    Mode=TwoWay}"
+                                              LowerValue="{Binding Path=MultiBlockLowerValue,
+                                                                   Mode=TwoWay}"
+                                              Maximum="{Binding Path=MaxNumberOfBlocksHigherValue}"
+                                              Minimum="0"
+                                              Step="1" />
+                            <TextBlock VerticalAlignment="Center">
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}Multiple Block Range: {0} to {1}">
+                                        <Binding Path="MultiBlockLowerValue" />
+                                        <Binding Path="MultiBlockHigherValue" />
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <Slider DockPanel.Dock="Bottom"
+                                    Maximum="100"
+                                    Minimum="0"
+                                    Value="{Binding Path=AutoSaveMinimumDifficulty}" />
+                            <TextBlock VerticalAlignment="Center"
+                                       Text="{Binding Path=AutoSaveMinimumDifficulty,
+                                                      StringFormat=Auto Save Minimum Difficulty: {0:F2}}"
+                                       ToolTip="When auto generating puzzles, any puzzles with a difficulty score above this value will be saved." />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Auto Generate Attempts: " />
+                            <TextBox Text="{Binding Path=AutoGenerateAttempts}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Auto Generate Attempted: " />
+                            <TextBox IsReadOnly="True" Text="{Binding Path=AutoGenerateAttempted, Mode=OneWay}" />
+                        </DockPanel>
+                        <DockPanel Margin="2">
+                            <TextBlock VerticalAlignment="Center"
+                                       DockPanel.Dock="Left"
+                                       Text="Puzzles Saved: " />
+                            <TextBox IsReadOnly="True" Text="{Binding Path=PuzzlesSaved, Mode=OneWay}" />
+                        </DockPanel>
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandGenerateGameBoard}"
+                                Content="Generate Game Board" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandAutoGenerateGameBoards}"
+                                Content="Auto Generate Game Boards" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Game Board Puzzles">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200" />
+                            <RowDefinition Height="24" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <ListBox Grid.Row="0"
+                                 ItemsSource="{Binding Path=GameBoards}"
+                                 SelectedItem="{Binding Path=SelectedGameBoard}" />
+                        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=SelectedGameBoard, Converter={StaticResource ResourceKey=GameBoardToDifficultyConverter}, StringFormat=Difficulty: {0:F2}}" />
+                            <TextBlock Margin="10, 0" Text="{Binding Path=SelectedGameBoard.Successes, StringFormat=Successes: {0}}" />
+                            <TextBlock Margin="10, 0" Text="{Binding Path=SelectedGameBoard.Failures, StringFormat=Failures: {0}}" />
+                        </StackPanel>
+                        <ItemsControl Grid.Row="2"
+                                      Background="White"
+                                      ItemsSource="{Binding Path=GameBoardPuzzle}"
+                                      ItemTemplate="{DynamicResource GameBoardPuzzleDataTemplateLevel1}" />
+                    </Grid>
+                    <StackPanel Grid.Column="1">
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandSaveSelectedGameBoard}"
+                                Content="Save Selected Game Board" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandSaveAllGameBoards}"
+                                Content="Save All Game Boards" />
+                        <Button Margin="2"
+                                Command="{Binding Path=CommandLoadGameBoards}"
+                                Content="Load Game Boards From Disk" />
+                        <TextBlock Text="{Binding Path=SelectedGameBoard.Difficulty, StringFormat=Difficulty: {0}}" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Level Mapping">
+                <Grid>
+                    <Grid.Resources>
+                        <xcdg:DataGridCollectionViewSource x:Key="LevelMappingDataGridSource"
+                                                           AutoCreateItemProperties="False"
+                                                           Source="{Binding Path=LevelMapping.Mapping}">
+                            <xcdg:DataGridCollectionViewSource.ItemProperties>
+                                <xcdg:DataGridItemProperty Name="Level"
+                                                           DataType="{x:Type System:Int32}"
+                                                           ValuePath="Key" />
+                                <xcdg:DataGridItemProperty Name="Puzzle"
+                                                           DataType="{x:Type System:String}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="Difficulty"
+                                                           Converter="{StaticResource GameBoardIdToDifficultyConverter}"
+                                                           DataType="{x:Type System:String}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="ContainingTypes"
+                                                           Converter="{StaticResource GameBoardIdToContainingTypesConverter}"
+                                                           DataType="{x:Type System:String}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="DestinationBoardString"
+                                                           Converter="{StaticResource GameBoardIdToDestinationBoardStringConverter}"
+                                                           DataType="{x:Type System:String}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="Rows"
+                                                           Converter="{StaticResource GameBoardIdToRowsConverter}"
+                                                           DataType="{x:Type System:Int32}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="Columns"
+                                                           Converter="{StaticResource GameBoardIdToColumnsConverter}"
+                                                           DataType="{x:Type System:Int32}"
+                                                           ValuePath="Value" />
+                                <xcdg:DataGridItemProperty Name="RowsTimesColumns"
+                                                           Converter="{StaticResource GameBoardIdToRowsTimesColumnsConverter}"
+                                                           DataType="{x:Type System:Int32}"
+                                                           ValuePath="Value" />
+                            </xcdg:DataGridCollectionViewSource.ItemProperties>
+                        </xcdg:DataGridCollectionViewSource>
+                    </Grid.Resources>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <xcdg:DataGridControl x:Name="LevelMappingDataGrid"
+                                              Grid.Column="0"
+                                              AutoCreateColumns="False"
+                                              Background="White"
+                                              ItemsSource="{Binding Source={StaticResource LevelMappingDataGridSource}}"
+                                              SelectedItem="{Binding Path=SelectedMapping}"
+                                              SelectionMode="Extended">
+                            <xcdg:DataGridControl.Columns>
+                                <xcdg:Column Title="Level"
+                                             FieldName="Level"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Puzzle"
+                                             FieldName="Puzzle"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Difficulty"
+                                             FieldName="Difficulty"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Containing Types"
+                                             FieldName="ContainingTypes"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Destination Board Strings"
+                                             FieldName="DestinationBoardString"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Rows"
+                                             FieldName="Rows"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Columns"
+                                             FieldName="Columns"
+                                             ReadOnly="True" />
+                                <xcdg:Column Title="Rows X Columns"
+                                             FieldName="RowsTimesColumns"
+                                             ReadOnly="True" />
+                            </xcdg:DataGridControl.Columns>
+                        </xcdg:DataGridControl>
+                        <GridSplitter Grid.Column="1"
+                                      Width="2"
+                                      Margin="2"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Stretch"
+                                      BorderBrush="Black"
+                                      BorderThickness="2" />
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="160" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="4, 0">
+                                <DockPanel>
+                                    <TextBlock DockPanel.Dock="Top" Text="Number of Levels:" />
+                                    <TextBox Text="{Binding Path=NumberOfLevelsToMap}" />
+                                </DockPanel>
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandInitializeMapping}"
+                                        Content="Initialize Mapping" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandClearLevelMapping}"
+                                        Content="Clear Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadGameBoards}"
+                                        Content="Load From Disk" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandRemoveMappedLevels}"
+                                        Content="Remove Mapped Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadAndClear}"
+                                        Content="Load and Remove Mapped" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandAddLevelMapping}"
+                                        Content="&lt;&lt;-- Map" />
+                                <Button Margin="2"
+                                        Click="UnmapMappingButtonClick"
+                                        Content="--&gt;&gt; Unmap" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandVerifyLevelMapping}"
+                                        Content="Verify Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandFixFilenames}"
+                                        Content="Fix Filenames" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandFixDifficulty}"
+                                        Content="Fix Difficulty" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandForceFixDifficulty}"
+                                        Content="Force Fix Difficulty"
+                                        ToolTip="Will recalculate difficulty even if it's already set" />
+                                <Button Margin="2"
+                                        Click="ArchiveLevelsButtonClick"
+                                        Content="Archive Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandSaveLevelMapping}"
+                                        Content="Save Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadLevelMapping}"
+                                        Content="Load Mappings" />
+                            </StackPanel>
+                            <xcdg:DataGridControl x:Name="LoadGameBoardsDataGrid"
+                                                  Grid.Column="1"
+                                                  AutoCreateColumns="False"
+                                                  ItemsSource="{Binding Source={StaticResource LoadGameBoardsDataGridDataGridSource}}"
+                                                  ReadOnly="True"
+                                                  SelectedItem="{Binding Path=SelectedGameBoard}"
+                                                  SelectionMode="Extended">
+                                <xcdg:DataGridControl.Columns>
+                                    <xcdg:Column Title="Puzzle ID"
+                                                 FieldName="PuzzleId"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Containing Types"
+                                                 FieldName="ContainingTypes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Difficulty"
+                                                 FieldName="Difficulty"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Successes"
+                                                 FieldName="Successes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Failures"
+                                                 FieldName="Failures"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Destination Board Strings"
+                                                 FieldName="DestinationBoardString"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows"
+                                                 FieldName="Rows"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Columns"
+                                                 FieldName="Columns"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows X Columns"
+                                                 FieldName="RowsTimesColumns"
+                                                 ReadOnly="True" />
+                                </xcdg:DataGridControl.Columns>
+                            </xcdg:DataGridControl>
+                        </Grid>
+                    </Grid>
+                    <GridSplitter Height="2"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Bottom"
+                                  BorderBrush="Black"
+                                  BorderThickness="2" />
+                    <DockPanel Grid.Row="1">
+                        <TextBlock DockPanel.Dock="Top" Text="Verification Results:" />
+                        <TextBox IsReadOnly="True"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                 Text="{Binding Path=VerificationResults,
+                                                Mode=OneWay}" />
+                    </DockPanel>
+                    <ScrollViewer Grid.Row="2"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ItemsControl Background="White"
+                                      ItemsSource="{Binding Path=GameBoardPuzzle}"
+                                      ItemTemplate="{DynamicResource GameBoardPuzzleDataTemplateLevel1}" />
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Special Stages Level Mapping">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="450" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.Resources>
+                            <xcdg:DataGridCollectionViewSource x:Key="SpecialStagesLevelMappingDataGridSource"
+                                                               AutoCreateItemProperties="False"
+                                                               Source="{Binding Path=SelectedSpecialStage.LevelMapping.Mapping}">
+                                <xcdg:DataGridCollectionViewSource.ItemProperties>
+                                    <xcdg:DataGridItemProperty Name="Level"
+                                                               DataType="{x:Type System:Int32}"
+                                                               ValuePath="Key" />
+                                    <xcdg:DataGridItemProperty Name="Puzzle"
+                                                               DataType="{x:Type System:String}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="Difficulty"
+                                                               Converter="{StaticResource GameBoardIdToDifficultyConverter}"
+                                                               DataType="{x:Type System:String}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="ContainingTypes"
+                                                               Converter="{StaticResource GameBoardIdToContainingTypesConverter}"
+                                                               DataType="{x:Type System:String}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="DestinationBoardString"
+                                                               Converter="{StaticResource GameBoardIdToDestinationBoardStringConverter}"
+                                                               DataType="{x:Type System:String}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="Rows"
+                                                               Converter="{StaticResource GameBoardIdToRowsConverter}"
+                                                               DataType="{x:Type System:Int32}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="Columns"
+                                                               Converter="{StaticResource GameBoardIdToColumnsConverter}"
+                                                               DataType="{x:Type System:Int32}"
+                                                               ValuePath="Value" />
+                                    <xcdg:DataGridItemProperty Name="RowsTimesColumns"
+                                                               Converter="{StaticResource GameBoardIdToRowsTimesColumnsConverter}"
+                                                               DataType="{x:Type System:Int32}"
+                                                               ValuePath="Value" />
+                                </xcdg:DataGridCollectionViewSource.ItemProperties>
+                            </xcdg:DataGridCollectionViewSource>
+                        </Grid.Resources>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="24" />
+                                <RowDefinition Height="24" />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <ComboBox Height="24"
+                                      DisplayMemberPath="StageId"
+                                      ItemsSource="{Binding Path=SpecialStages}"
+                                      SelectedItem="{Binding Path=SelectedSpecialStage}" />
+                            <DockPanel Grid.Row="1">
+                                <TextBlock VerticalAlignment="Center"
+                                           DockPanel.Dock="Left"
+                                           Text="Description: " />
+                                <TextBox VerticalAlignment="Center" Text="{Binding Path=SelectedSpecialStage.Description}" />
+                            </DockPanel>
+                            <xcdg:DataGridControl x:Name="SpecialStagesLevelMappingDataGrid"
+                                                  Grid.Row="2"
+                                                  Grid.Column="0"
+                                                  AutoCreateColumns="False"
+                                                  Background="White"
+                                                  ItemsSource="{Binding Source={StaticResource SpecialStagesLevelMappingDataGridSource}}"
+                                                  SelectedItem="{Binding Path=SelectedMapping}"
+                                                  SelectionMode="Extended">
+                                <xcdg:DataGridControl.Columns>
+                                    <xcdg:Column Title="Level"
+                                                 FieldName="Level"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Puzzle"
+                                                 FieldName="Puzzle"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Difficulty"
+                                                 FieldName="Difficulty"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Containing Types"
+                                                 FieldName="ContainingTypes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Destination Board Strings"
+                                                 FieldName="DestinationBoardString"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows"
+                                                 FieldName="Rows"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Columns"
+                                                 FieldName="Columns"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows X Columns"
+                                                 FieldName="RowsTimesColumns"
+                                                 ReadOnly="True" />
+                                </xcdg:DataGridControl.Columns>
+                            </xcdg:DataGridControl>
+                        </Grid>
+                        <GridSplitter Grid.Column="1"
+                                      Width="2"
+                                      Margin="2"
+                                      HorizontalAlignment="Left"
+                                      VerticalAlignment="Stretch"
+                                      BorderBrush="Black"
+                                      BorderThickness="2" />
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="160" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="4, 0">
+                                <DockPanel>
+                                    <TextBlock DockPanel.Dock="Top" Text="Number of Levels:" />
+                                    <TextBox Text="{Binding Path=NumberOfLevelsToMap}" />
+                                </DockPanel>
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandInitializeSpecialStageMapping}"
+                                        Content="Initialize Mapping" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandClearSpecialStageLevelMapping}"
+                                        Content="Clear Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadGameBoards}"
+                                        Content="Load From Disk" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandRemoveMappedLevels}"
+                                        Content="Remove Mapped Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadAndClear}"
+                                        Content="Load and Remove Mapped" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandAddSpecialStageLevelMapping}"
+                                        Content="&lt;&lt;-- Map" />
+                                <Button Margin="2"
+                                        Click="UnmapSpecialStageMappingButtonClick"
+                                        Content="--&gt;&gt; Unmap" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandVerifyLevelMapping}"
+                                        Content="Verify Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandFixFilenames}"
+                                        Content="Fix Filenames" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandFixDifficulty}"
+                                        Content="Fix Difficulty" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandForceFixDifficulty}"
+                                        Content="Force Fix Difficulty"
+                                        ToolTip="Will recalculate difficulty even if it's already set" />
+                                <Button Margin="2"
+                                        Click="ArchiveLevelsButtonClickSpecialStages"
+                                        Content="Archive Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandSaveLevelMapping}"
+                                        Content="Save Mappings" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadLevelMapping}"
+                                        Content="Load Mappings" />
+                            </StackPanel>
+                            <xcdg:DataGridControl x:Name="LoadGameBoardsDataGridSpecialStages"
+                                                  Grid.Column="1"
+                                                  AutoCreateColumns="False"
+                                                  ItemsSource="{Binding Source={StaticResource LoadGameBoardsDataGridDataGridSource}}"
+                                                  ReadOnly="True"
+                                                  SelectedItem="{Binding Path=SelectedGameBoard}"
+                                                  SelectionMode="Extended">
+                                <xcdg:DataGridControl.Columns>
+                                    <xcdg:Column Title="Puzzle ID"
+                                                 FieldName="PuzzleId"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Containing Types"
+                                                 FieldName="ContainingTypes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Difficulty"
+                                                 FieldName="Difficulty"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Successes"
+                                                 FieldName="Successes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Failures"
+                                                 FieldName="Failures"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Destination Board Strings"
+                                                 FieldName="DestinationBoardString"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows"
+                                                 FieldName="Rows"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Columns"
+                                                 FieldName="Columns"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows X Columns"
+                                                 FieldName="RowsTimesColumns"
+                                                 ReadOnly="True" />
+                                </xcdg:DataGridControl.Columns>
+                            </xcdg:DataGridControl>
+                        </Grid>
+                    </Grid>
+                    <GridSplitter Height="2"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Bottom"
+                                  BorderBrush="Black"
+                                  BorderThickness="2" />
+                    <DockPanel Grid.Row="1">
+                        <TextBlock DockPanel.Dock="Top" Text="Verification Results:" />
+                        <TextBox IsReadOnly="True"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                 Text="{Binding Path=VerificationResults,
+                                                Mode=OneWay}" />
+                    </DockPanel>
+                    <ScrollViewer Grid.Row="2"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ItemsControl Background="White"
+                                      ItemsSource="{Binding Path=GameBoardPuzzle}"
+                                      ItemTemplate="{DynamicResource GameBoardPuzzleDataTemplateLevel1}" />
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Archived Levels">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="450" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="160" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="4, 0">
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadGameBoards}"
+                                        Content="Load From Disk" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandRemoveMappedLevels}"
+                                        Content="Remove Mapped Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadAndClear}"
+                                        Content="Load and Remove Mapped" />
+                                <Button Margin="2"
+                                        Click="DeleteLevelsButtonClick"
+                                        Content="Delete Levels" />
+                                <Button Margin="2"
+                                        Click="UnarchiveLevelsButtonClick"
+                                        Content="Unarchive Levels" />
+                                <Button Margin="2"
+                                        Command="{Binding Path=CommandLoadLevelMapping}"
+                                        Content="Load Mappings" />
+                            </StackPanel>
+                            <xcdg:DataGridControl x:Name="LoadGameBoardsDataGridArchivedLevels"
+                                                  Grid.Column="1"
+                                                  AutoCreateColumns="False"
+                                                  ItemsSource="{Binding Source={StaticResource ArchivedGameBoardsDataGridDataGridSource}}"
+                                                  ReadOnly="True"
+                                                  SelectedItem="{Binding Path=SelectedGameBoardArchive}"
+                                                  SelectionMode="Extended">
+                                <xcdg:DataGridControl.Columns>
+                                    <xcdg:Column Title="Puzzle ID"
+                                                 FieldName="PuzzleId"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Containing Types"
+                                                 FieldName="ContainingTypes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Difficulty"
+                                                 FieldName="Difficulty"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Successes"
+                                                 FieldName="Successes"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Failures"
+                                                 FieldName="Failures"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Destination Board Strings"
+                                                 FieldName="DestinationBoardString"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows"
+                                                 FieldName="Rows"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Columns"
+                                                 FieldName="Columns"
+                                                 ReadOnly="True" />
+                                    <xcdg:Column Title="Rows X Columns"
+                                                 FieldName="RowsTimesColumns"
+                                                 ReadOnly="True" />
+                                </xcdg:DataGridControl.Columns>
+                            </xcdg:DataGridControl>
+                        </Grid>
+                    </Grid>
+                    <GridSplitter Height="2"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Bottom"
+                                  BorderBrush="Black"
+                                  BorderThickness="2" />
+                    <ScrollViewer Grid.Row="1"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ItemsControl Background="White"
+                                      ItemsSource="{Binding Path=ArchivedGameBoardPuzzle}"
+                                      ItemTemplate="{DynamicResource GameBoardPuzzleDataTemplateLevel1}" />
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
