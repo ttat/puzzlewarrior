@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: a22919acf44bfbd4a81ae4e3d240fc36
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MasterGameElements04_0
+    21300002: MasterGameElements04_1
+    21300004: MasterGameElements04_2
+    21300006: MasterGameElements04_3
+    21300008: MasterGameElements04_4
+    21300010: MasterGameElements04_5
+    21300012: MasterGameElements04_6
+    21300014: MasterGameElements04_7
+    21300016: MasterGameElements04_8
+    21300018: MasterGameElements04_9
+    21300020: MasterGameElements04_10
+    21300022: MasterGameElements04_11
+    21300024: MasterGameElements04_12
+    21300026: MasterGameElements04_13
+    21300028: MasterGameElements04_14
+    21300030: MasterGameElements04_15
+    21300032: MasterGameElements04_16
+    21300034: MasterGameElements04_17
+    21300036: MasterGameElements04_18
+    21300038: MasterGameElements04_19
+    21300040: MasterGameElements04_20
+    21300042: MasterGameElements04_21
+    21300044: MasterGameElements04_22
+    21300046: MasterGameElements04_23
+    21300048: MasterGameElements04_24
+    21300050: MasterGameElements04_25
+    21300052: MasterGameElements04_26
+    21300054: MasterGameElements04_27
+    21300056: MasterGameElements04_28
+    21300058: MasterGameElements04_29
+    21300060: MasterGameElements04_30
+    21300062: MasterGameElements04_31
+    21300064: MasterGameElements04_32
+    21300066: MasterGameElements04_33
+    21300068: MasterGameElements04_34
+    21300070: MasterGameElements04_35
+    21300072: MasterGameElements04_36
+    21300074: MasterGameElements04_37
+    21300076: MasterGameElements04_38
+    21300078: MasterGameElements04_39
+    21300080: MasterGameElements04_40
+    21300082: MasterGameElements04_41
+    21300084: MasterGameElements04_42
+    21300086: MasterGameElements04_43
+    21300088: MasterGameElements04_44
+    21300090: MasterGameElements04_45
+    21300092: MasterGameElements04_46
+    21300094: MasterGameElements04_47
+    21300096: MasterGameElements04_48
+    21300098: MasterGameElements04_49
+    21300100: MasterGameElements04_50
+    21300102: MasterGameElements04_51
+    21300104: MasterGameElements04_52
+    21300106: MasterGameElements04_53
+    21300108: MasterGameElements04_54
+    21300110: MasterGameElements04_55
+    21300112: MasterGameElements04_56
+    21300114: MasterGameElements04_57
+    21300116: MasterGameElements04_58
+    21300118: MasterGameElements04_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 6
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MasterGameElements04_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_27
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_29
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_33
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_35
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_41
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 900
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_43
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_45
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_46
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_47
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 600
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_49
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_52
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_53
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_57
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_58
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterGameElements04_59
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 300
+        height: 300
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

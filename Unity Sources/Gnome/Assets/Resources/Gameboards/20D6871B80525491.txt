@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameBoard xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Failures>275</Failures>
+  <GameBlocks>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="0" IndexRow="0" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="1" IndexRow="0" ForceDirection="Right" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="2" IndexRow="0" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="3" IndexRow="0" AvailableMoves="4" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="4" IndexRow="0" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="5" IndexRow="0" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="6" IndexRow="0" ForceDirection="Down" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="0" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="2" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="3" IndexRow="1" ForceDirection="Left" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="4" IndexRow="1" ForceDirection="Right" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="5" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="6" IndexRow="1" IsAvailable="true" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="0" IndexRow="2" ForceDirection="Right" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="2" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="3" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="4" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="5" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="6" IndexRow="2" ForceDirection="Down" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="0" IndexRow="3" ForceDirection="Right" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="1" IndexRow="3" ForceDirection="Up" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="2" IndexRow="3" AvailableMoves="3" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="3" IndexRow="3" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="4" IndexRow="3" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="5" IndexRow="3" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="6" IndexRow="3" ForceDirection="Down" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="0" IndexRow="4" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="1" IndexRow="4" AvailableMoves="3" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="2" IndexRow="4" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockChangeDirection" IndexColumn="3" IndexRow="4" ForceDirection="Up" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="4" IndexRow="4" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="5" IndexRow="4" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="6" IndexRow="4" IsAvailable="true" />
+    </GameBlock>
+  </GameBlocks>
+  <Successes>8</Successes>
+</GameBoard>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpecialStage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Description>Park of Doom</Description>
+  <LevelMapping>
+    <Keys>
+      <Key>1</Key>
+      <Key>2</Key>
+      <Key>3</Key>
+      <Key>4</Key>
+      <Key>5</Key>
+      <Key>6</Key>
+      <Key>7</Key>
+      <Key>8</Key>
+      <Key>9</Key>
+      <Key>10</Key>
+      <Key>11</Key>
+      <Key>12</Key>
+    </Keys>
+    <Values>
+      <Value>C2F48AB23654369B</Value>
+      <Value>69112917023BA403</Value>
+      <Value>6BD0F9954A48C43E</Value>
+      <Value>1BA3C60C56D72ECB</Value>
+      <Value>8F7C3DD3D2EA9F69</Value>
+      <Value>49FACBE7C9DB81E6</Value>
+      <Value>967F763A82D808BC</Value>
+      <Value>977E874737B74606</Value>
+      <Value>72843A9A2284D3DE</Value>
+      <Value>46CB72931508BFA4</Value>
+      <Value>AAD28F8E2695C31C</Value>
+      <Value>5023C62739867FCF</Value>
+    </Values>
+  </LevelMapping>
+  <StageId>reward_stage_01</StageId>
+</SpecialStage>

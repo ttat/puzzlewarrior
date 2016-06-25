@@ -1,0 +1,13 @@
+Level, LevelId, Successes, Failures, NumBlockTypes, NumPlayers, ChangeDirection, ExtraMove, MultipleMoves, PlayersCount1, PlayersCount2, PlayersCount3, PlayersCount4, PlayersCount5, PlayersCount6, PlayersCount7, NormalCount, ChangeDirectionCount, ExtraMovesCount, MultipleMoves
+1, 0A440F30566D2448, 5, 44, 2, 6, X,  ,  , 0, 2, 4, 0, 0, 0, 0, 16, 8, 0, 0
+2, E1D040B706963BBB, 5, 12, 2, 5, X,  ,  , 1, 4, 0, 0, 0, 0, 0, 9, 3, 0, 0
+3, D94F461C8EB70E82, 7, 149, 1, 6,  ,  ,  , 2, 4, 0, 0, 0, 0, 0, 10, 0, 0, 0
+4, 6D6C3C9DDF4536E2, 7, 30, 2, 5, X,  ,  , 3, 1, 1, 0, 0, 0, 0, 8, 4, 0, 0
+5, C8F98D982F97C15D, 4, 4, 2, 4, X,  ,  , 0, 0, 4, 0, 0, 0, 0, 12, 4, 0, 0
+6, 672D0AC47BFC48B6, 8, 67, 1, 6,  ,  ,  , 2, 4, 0, 0, 0, 0, 0, 10, 0, 0, 0
+7, F52DCCFEAA345939, 8, 7, 2, 5, X,  ,  , 1, 4, 0, 0, 0, 0, 0, 9, 4, 0, 0
+8, 5BFA2EB870A54130, 2, 2, 2, 3, X,  ,  , 0, 2, 1, 0, 0, 0, 0, 7, 2, 0, 0
+9, 9FB8469745B2C98B, 20, 49, 2, 6, X,  ,  , 5, 0, 1, 0, 0, 0, 0, 8, 6, 0, 0
+10, F6604BD77A4D87D0, 5, 20, 2, 5,  ,  , X, 4, 1, 0, 0, 0, 0, 0, 4, 0, 0, 1
+11, 2C36BC54643EB0B6, 3, 0, 2, 3, X,  ,  , 1, 0, 2, 0, 0, 0, 0, 7, 3, 0, 0
+12, DFE173A100348557, 4, 5, 2, 4, X,  ,  , 2, 1, 1, 0, 0, 0, 0, 7, 2, 0, 0

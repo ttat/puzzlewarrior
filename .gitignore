@@ -8,3 +8,4 @@ Unit Tests/GnomeUnitTests/Idky.Tests/obj/
 Unit Tests/GnomeUnitTests/Idky.Tests/bin/
 *.DotSettings
 Unity Sources/Gnome/obj/
+*.userprefs

@@ -1,0 +1,2907 @@
+fileFormatVersion: 2
+guid: a7cac47eaf1e81a4db9ba364302a0357
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MasterFXFireworks_0
+    21300002: MasterFXFireworks_1
+    21300004: MasterFXFireworks_2
+    21300006: MasterFXFireworks_3
+    21300008: MasterFXFireworks_4
+    21300010: MasterFXFireworks_5
+    21300012: MasterFXFireworks_6
+    21300014: MasterFXFireworks_7
+    21300016: MasterFXFireworks_8
+    21300018: MasterFXFireworks_9
+    21300020: MasterFXFireworks_10
+    21300022: MasterFXFireworks_11
+    21300024: MasterFXFireworks_12
+    21300026: MasterFXFireworks_13
+    21300028: MasterFXFireworks_14
+    21300030: MasterFXFireworks_15
+    21300032: MasterFXFireworks_16
+    21300034: MasterFXFireworks_17
+    21300036: MasterFXFireworks_18
+    21300038: MasterFXFireworks_19
+    21300040: MasterFXFireworks_20
+    21300042: MasterFXFireworks_21
+    21300044: MasterFXFireworks_22
+    21300046: MasterFXFireworks_23
+    21300048: MasterFXFireworks_24
+    21300050: MasterFXFireworks_25
+    21300052: MasterFXFireworks_26
+    21300054: MasterFXFireworks_27
+    21300056: MasterFXFireworks_28
+    21300058: MasterFXFireworks_29
+    21300060: MasterFXFireworks_30
+    21300062: MasterFXFireworks_31
+    21300064: MasterFXFireworks_32
+    21300066: MasterFXFireworks_33
+    21300068: MasterFXFireworks_34
+    21300070: MasterFXFireworks_35
+    21300072: MasterFXFireworks_36
+    21300074: MasterFXFireworks_37
+    21300076: MasterFXFireworks_38
+    21300078: MasterFXFireworks_39
+    21300080: MasterFXFireworks_40
+    21300082: MasterFXFireworks_41
+    21300084: MasterFXFireworks_42
+    21300086: MasterFXFireworks_43
+    21300088: MasterFXFireworks_44
+    21300090: MasterFXFireworks_45
+    21300092: MasterFXFireworks_46
+    21300094: MasterFXFireworks_47
+    21300096: MasterFXFireworks_48
+    21300098: MasterFXFireworks_49
+    21300100: MasterFXFireworks_50
+    21300102: MasterFXFireworks_51
+    21300104: MasterFXFireworks_52
+    21300106: MasterFXFireworks_53
+    21300108: MasterFXFireworks_54
+    21300110: MasterFXFireworks_55
+    21300112: MasterFXFireworks_56
+    21300114: MasterFXFireworks_57
+    21300116: MasterFXFireworks_58
+    21300118: MasterFXFireworks_59
+    21300120: MasterFXFireworks_60
+    21300122: MasterFXFireworks_61
+    21300124: MasterFXFireworks_62
+    21300126: MasterFXFireworks_63
+    21300128: MasterFXFireworks_64
+    21300130: MasterFXFireworks_65
+    21300132: MasterFXFireworks_66
+    21300134: MasterFXFireworks_67
+    21300136: MasterFXFireworks_68
+    21300138: MasterFXFireworks_69
+    21300140: MasterFXFireworks_70
+    21300142: MasterFXFireworks_71
+    21300144: MasterFXFireworks_72
+    21300146: MasterFXFireworks_73
+    21300148: MasterFXFireworks_74
+    21300150: MasterFXFireworks_75
+    21300152: MasterFXFireworks_76
+    21300154: MasterFXFireworks_77
+    21300156: MasterFXFireworks_78
+    21300158: MasterFXFireworks_79
+    21300160: MasterFXFireworks_80
+    21300162: MasterFXFireworks_81
+    21300164: MasterFXFireworks_82
+    21300166: MasterFXFireworks_83
+    21300168: MasterFXFireworks_84
+    21300170: MasterFXFireworks_85
+    21300172: MasterFXFireworks_86
+    21300174: MasterFXFireworks_87
+    21300176: MasterFXFireworks_88
+    21300178: MasterFXFireworks_89
+    21300180: MasterFXFireworks_90
+    21300182: MasterFXFireworks_91
+    21300184: MasterFXFireworks_92
+    21300186: MasterFXFireworks_93
+    21300188: MasterFXFireworks_94
+    21300190: MasterFXFireworks_95
+    21300192: MasterFXFireworks_96
+    21300194: MasterFXFireworks_97
+    21300196: MasterFXFireworks_98
+    21300198: MasterFXFireworks_99
+    21300200: MasterFXFireworks_100
+    21300202: MasterFXFireworks_101
+    21300204: MasterFXFireworks_102
+    21300206: MasterFXFireworks_103
+    21300208: MasterFXFireworks_104
+    21300210: MasterFXFireworks_105
+    21300212: MasterFXFireworks_106
+    21300214: MasterFXFireworks_107
+    21300216: MasterFXFireworks_108
+    21300218: MasterFXFireworks_109
+    21300220: MasterFXFireworks_110
+    21300222: MasterFXFireworks_111
+    21300224: MasterFXFireworks_112
+    21300226: MasterFXFireworks_113
+    21300228: MasterFXFireworks_114
+    21300230: MasterFXFireworks_115
+    21300232: MasterFXFireworks_116
+    21300234: MasterFXFireworks_117
+    21300236: MasterFXFireworks_118
+    21300238: MasterFXFireworks_119
+    21300240: MasterFXFireworks_120
+    21300242: MasterFXFireworks_121
+    21300244: MasterFXFireworks_122
+    21300246: MasterFXFireworks_123
+    21300248: MasterFXFireworks_124
+    21300250: MasterFXFireworks_125
+    21300252: MasterFXFireworks_126
+    21300254: MasterFXFireworks_127
+    21300256: MasterFXFireworks_128
+    21300258: MasterFXFireworks_129
+    21300260: MasterFXFireworks_130
+    21300262: MasterFXFireworks_131
+    21300264: MasterFXFireworks_132
+    21300266: MasterFXFireworks_133
+    21300268: MasterFXFireworks_134
+    21300270: MasterFXFireworks_135
+    21300272: MasterFXFireworks_136
+    21300274: MasterFXFireworks_137
+    21300276: MasterFXFireworks_138
+    21300278: MasterFXFireworks_139
+    21300280: MasterFXFireworks_140
+    21300282: MasterFXFireworks_141
+    21300284: MasterFXFireworks_142
+    21300286: MasterFXFireworks_143
+    21300288: MasterFXFireworks_144
+    21300290: MasterFXFireworks_145
+    21300292: MasterFXFireworks_146
+    21300294: MasterFXFireworks_147
+    21300296: MasterFXFireworks_148
+    21300298: MasterFXFireworks_149
+    21300300: MasterFXFireworks_150
+    21300302: MasterFXFireworks_151
+    21300304: MasterFXFireworks_152
+    21300306: MasterFXFireworks_153
+    21300308: MasterFXFireworks_154
+    21300310: MasterFXFireworks_155
+    21300312: MasterFXFireworks_156
+    21300314: MasterFXFireworks_157
+    21300316: MasterFXFireworks_158
+    21300318: MasterFXFireworks_159
+    21300320: MasterFXFireworks_160
+    21300322: MasterFXFireworks_161
+    21300324: MasterFXFireworks_162
+    21300326: MasterFXFireworks_163
+    21300328: MasterFXFireworks_164
+    21300330: MasterFXFireworks_165
+    21300332: MasterFXFireworks_166
+    21300334: MasterFXFireworks_167
+    21300336: MasterFXFireworks_168
+    21300338: MasterFXFireworks_169
+    21300340: MasterFXFireworks_170
+    21300342: MasterFXFireworks_171
+    21300344: MasterFXFireworks_172
+    21300346: MasterFXFireworks_173
+    21300348: MasterFXFireworks_174
+    21300350: MasterFXFireworks_175
+    21300352: MasterFXFireworks_176
+    21300354: MasterFXFireworks_177
+    21300356: MasterFXFireworks_178
+    21300358: MasterFXFireworks_179
+    21300360: MasterFXFireworks_180
+    21300362: MasterFXFireworks_181
+    21300364: MasterFXFireworks_182
+    21300366: MasterFXFireworks_183
+    21300368: MasterFXFireworks_184
+    21300370: MasterFXFireworks_185
+    21300372: MasterFXFireworks_186
+    21300374: MasterFXFireworks_187
+    21300376: MasterFXFireworks_188
+    21300378: MasterFXFireworks_189
+    21300380: MasterFXFireworks_190
+    21300382: MasterFXFireworks_191
+    21300384: MasterFXFireworks_192
+    21300386: MasterFXFireworks_193
+    21300388: MasterFXFireworks_194
+    21300390: MasterFXFireworks_195
+    21300392: MasterFXFireworks_196
+    21300394: MasterFXFireworks_197
+    21300396: MasterFXFireworks_198
+    21300398: MasterFXFireworks_199
+    21300400: MasterFXFireworks_200
+    21300402: MasterFXFireworks_201
+    21300404: MasterFXFireworks_202
+    21300406: MasterFXFireworks_203
+    21300408: MasterFXFireworks_204
+    21300410: MasterFXFireworks_205
+    21300412: MasterFXFireworks_206
+    21300414: MasterFXFireworks_207
+    21300416: MasterFXFireworks_208
+    21300418: MasterFXFireworks_209
+    21300420: MasterFXFireworks_210
+    21300422: MasterFXFireworks_211
+    21300424: MasterFXFireworks_212
+    21300426: MasterFXFireworks_213
+    21300428: MasterFXFireworks_214
+    21300430: MasterFXFireworks_215
+    21300432: MasterFXFireworks_216
+    21300434: MasterFXFireworks_217
+    21300436: MasterFXFireworks_218
+    21300438: MasterFXFireworks_219
+    21300440: MasterFXFireworks_220
+    21300442: MasterFXFireworks_221
+    21300444: MasterFXFireworks_222
+    21300446: MasterFXFireworks_223
+    21300448: MasterFXFireworks_224
+    21300450: MasterFXFireworks_225
+    21300452: MasterFXFireworks_226
+    21300454: MasterFXFireworks_227
+    21300456: MasterFXFireworks_228
+    21300458: MasterFXFireworks_229
+    21300460: MasterFXFireworks_230
+    21300462: MasterFXFireworks_231
+    21300464: MasterFXFireworks_232
+    21300466: MasterFXFireworks_233
+    21300468: MasterFXFireworks_234
+    21300470: MasterFXFireworks_235
+    21300472: MasterFXFireworks_236
+    21300474: MasterFXFireworks_237
+    21300476: MasterFXFireworks_238
+    21300478: MasterFXFireworks_239
+    21300480: MasterFXFireworks_240
+    21300482: MasterFXFireworks_241
+    21300484: MasterFXFireworks_242
+    21300486: MasterFXFireworks_243
+    21300488: MasterFXFireworks_244
+    21300490: MasterFXFireworks_245
+    21300492: MasterFXFireworks_246
+    21300494: MasterFXFireworks_247
+    21300496: MasterFXFireworks_248
+    21300498: MasterFXFireworks_249
+    21300500: MasterFXFireworks_250
+    21300502: MasterFXFireworks_251
+    21300504: MasterFXFireworks_252
+    21300506: MasterFXFireworks_253
+    21300508: MasterFXFireworks_254
+    21300510: MasterFXFireworks_255
+    21300512: MasterFXFireworks_256
+    21300514: MasterFXFireworks_257
+    21300516: MasterFXFireworks_258
+    21300518: MasterFXFireworks_259
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MasterFXFireworks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_7
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_9
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_10
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_11
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_12
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2850
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_18
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_20
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_21
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_22
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_24
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_25
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_30
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_32
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_33
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_35
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_36
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_37
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2550
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_40
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_44
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_45
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_46
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_48
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_49
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_50
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_51
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2400
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_53
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_54
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_55
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_57
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_58
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_59
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_60
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_61
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_62
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_63
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_64
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2250
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_66
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_67
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_68
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_69
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_70
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_71
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_72
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_73
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_74
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_75
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_76
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_77
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2100
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_79
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_80
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_81
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_82
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_83
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_84
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_85
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_86
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_87
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_88
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_89
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_90
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1950
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_92
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_93
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_94
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_95
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_96
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_97
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_98
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_99
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_100
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_101
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_102
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_103
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_105
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_106
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_107
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_108
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_109
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_110
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_111
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_112
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_113
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_114
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_115
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_116
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1650
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_118
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_119
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_120
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_121
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_122
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_123
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_124
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_125
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_126
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_127
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_128
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_129
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1500
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_131
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_132
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_133
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_134
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_135
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_136
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_137
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_138
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_139
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_140
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_141
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_142
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1350
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_144
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_145
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_146
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_147
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_148
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_149
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_150
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_151
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_152
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_153
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_154
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_155
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_157
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_158
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_159
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_160
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_161
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_162
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_163
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_164
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_165
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_166
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_167
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_168
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1050
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_169
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_170
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_171
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_172
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_173
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_174
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_175
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_176
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_177
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_178
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_179
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_180
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_181
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 900
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_182
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_183
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_184
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_185
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_186
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_187
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_188
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_189
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_190
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_191
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_192
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_193
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_194
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 750
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_195
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_196
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_197
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_198
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_199
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_200
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_201
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_202
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_203
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_204
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_205
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_206
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_207
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 600
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_209
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_210
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_211
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_212
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_213
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_214
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_215
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_216
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_217
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_218
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_219
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_220
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 450
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_221
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_222
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_223
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_224
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_225
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_226
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_227
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_228
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_229
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_230
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_231
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_232
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_233
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 300
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_234
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_235
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_236
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_237
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_238
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_239
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_240
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_241
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_242
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_243
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_244
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_245
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_246
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 150
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_247
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_248
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_249
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_250
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_251
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_252
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_253
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_254
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_255
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_256
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_257
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_258
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MasterFXFireworks_259
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 150
+        height: 150
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

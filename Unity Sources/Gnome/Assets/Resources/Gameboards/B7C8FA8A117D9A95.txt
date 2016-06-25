@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameBoard xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Failures>1</Failures>
+  <GameBlocks>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="0" IndexRow="0" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="1" IndexRow="0" AvailableMoves="1" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="0" IndexRow="1" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="1" IsAvailable="true" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="0" IndexRow="2" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="2" IsAvailable="true" />
+    </GameBlock>
+  </GameBlocks>
+  <Successes>1</Successes>
+</GameBoard>

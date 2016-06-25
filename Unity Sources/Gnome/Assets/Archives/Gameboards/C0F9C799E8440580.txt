@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameBoard xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Failures>34824</Failures>
+  <GameBlocks>
+    <GameBlock>
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="0" IsAvailable="true" />
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="3" IndexRow="0" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="4" IndexRow="0" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="5" IndexRow="0" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="0" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockMultipleMoves" IndexColumn="0" IndexRow="1" NumberOfMovesApplied="0" NumberOfMovesNeeded="2" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="2" IndexRow="1" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="3" IndexRow="1" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="4" IndexRow="1" AvailableMoves="1" />
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="1" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="0" IndexRow="2" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockMultipleMoves" IndexColumn="2" IndexRow="2" NumberOfMovesApplied="0" NumberOfMovesNeeded="2" />
+      <GameBlockBase xsi:type="GameBlockExtraMove" IndexColumn="3" IndexRow="2" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="4" IndexRow="2" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="5" IndexRow="2" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="2" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="1" IndexRow="3" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="2" IndexRow="3" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockExtraMove" IndexColumn="3" IndexRow="3" />
+      <GameBlockBase xsi:type="GameBlockMultipleMoves" IndexColumn="4" IndexRow="3" NumberOfMovesApplied="0" NumberOfMovesNeeded="2" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="5" IndexRow="3" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="3" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockNormal" IndexColumn="1" IndexRow="4" IsAvailable="true" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="2" IndexRow="4" AvailableMoves="2" />
+      <GameBlockBase xsi:type="GameBlockExtraMove" IndexColumn="3" IndexRow="4" />
+      <GameBlockBase xsi:type="GameBlockExtraMove" IndexColumn="4" IndexRow="4" />
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="4" />
+    </GameBlock>
+    <GameBlock>
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="0" IndexRow="5" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="1" IndexRow="5" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="2" IndexRow="5" AvailableMoves="1" />
+      <GameBlockBase xsi:type="GameBlockMultipleMoves" IndexColumn="3" IndexRow="5" NumberOfMovesApplied="0" NumberOfMovesNeeded="2" />
+      <GameBlockBase xsi:type="GameBlockPlayer" IndexColumn="4" IndexRow="5" AvailableMoves="1" />
+      <GameBlockBase xsi:nil="true" />
+      <GameBlockBase xsi:type="GameBlockNull" IndexColumn="6" IndexRow="5" />
+    </GameBlock>
+  </GameBlocks>
+  <Successes>10</Successes>
+</GameBoard>

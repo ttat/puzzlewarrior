@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SpecialStage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Description>Icelandia</Description>
+	<LevelMapping>
+		<Keys>
+			<Key>1</Key>
+			<Key>2</Key>
+			<Key>3</Key>
+			<Key>4</Key>
+			<Key>5</Key>
+			<Key>6</Key>
+			<Key>7</Key>
+			<Key>8</Key>
+			<Key>9</Key>
+			<Key>10</Key>
+			<Key>11</Key>
+			<Key>12</Key>
+		</Keys>
+		<Values>
+			<Value>0A440F30566D2448</Value>
+			<Value>E1D040B706963BBB</Value>
+			<Value>D94F461C8EB70E82</Value>
+			<Value>6D6C3C9DDF4536E2</Value>
+			<Value>C8F98D982F97C15D</Value>
+			<Value>672D0AC47BFC48B6</Value>
+			<Value>F52DCCFEAA345939</Value>
+			<Value>5BFA2EB870A54130</Value>
+			<Value>9FB8469745B2C98B</Value>
+			<Value>F6604BD77A4D87D0</Value>
+			<Value>2C36BC54643EB0B6</Value>
+			<Value>DFE173A100348557</Value>
+		</Values>
+	</LevelMapping>
+	<StageId>special_stage_01</StageId>
+</SpecialStage>
