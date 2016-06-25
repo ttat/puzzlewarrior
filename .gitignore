@@ -6,3 +6,5 @@ Tools/GnomeSolverTool/GnomeSolverToolApp/obj/
 Unit Tests/GnomeUnitTests/packages/
 Unit Tests/GnomeUnitTests/Idky.Tests/obj/
 Unit Tests/GnomeUnitTests/Idky.Tests/bin/
+*.DotSettings
+Unity Sources/Gnome/obj/

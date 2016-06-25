@@ -1,0 +1,22 @@
+EWOCprojects paleajed@gmail.com
+
+
+
+This addon implements a smoothing algorithm for meshes based on Laplacian relaxation, but adapted
+to have no shrinkage.
+
+
+Documentation
+
+First go to User Preferences->Addons and enable the LapRelax addon in the Mesh category.
+Go to EditMode, select some vertices and invoke the addon (button in the Mesh Tool panel).
+Set the amount of times you want the smoothing operation to be repeated.
+The mesh will be smoothed.
+
+If you wish to hotkey LapRelax:
+In the Input section of User Preferences at the bottom of the 3D View > Mesh section click 'Add New' button.
+In the Operator Identifier box put 'mesh.laprelax'.
+Assign a hotkey.
+Save as Default (Optional).
+
+

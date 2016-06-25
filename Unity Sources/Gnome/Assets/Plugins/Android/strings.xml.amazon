@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">198102476</string>
+	<string name="ga_trackingId">UA-42392676-1</string>
+	<bool name="ga_debug">false</bool>
+	<bool name="ga_reportUncaughtExceptions">true</bool>
+    <string name="chartboost_unity_app_id">52751d9716ba47e32200002d</string>
+    <string name="chartboost_unity_app_signature">dbf36dc23cad7c2387928ca9b2572f283b2dcad7</string>
+		<!-- Set whether impressions use activities or not (default: true).
+	       Use 'false' to disable. Any other value or no value at all will be read as true.
+		 There are a number of implications of using this feature.
+		 When true, Unity is paused while impressions are shown, but your game
+		   will disappear while the impression animates in and out.
+		 When false, pausing is managed in Unity code in the CBAndroidManager.doCustomPause() method.
+		   We have provided a default implementation for you which you can feel free to modify.
+		   Additionally, due to Unity optimizations, touch events will pass through Chartboost
+		     impressions in Android 2.3+.
+		   You will have to check if a Chartboost impression is open in any code that responds to
+		     touch events.  You can use the CBAndroidBinding.isImpressionVisible() method for this purpose. -->
+	<string name="chartboost_unity_impressions_use_activities">true</string>
+</resources>
